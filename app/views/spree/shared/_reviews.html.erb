@@ -1,5 +1,5 @@
 <div id="reviews">
-  <h6 class="product-section-title"><%= t(:reviews) %></h6>
+  <h6 class="product-section-title"><%= t('reviews') %></h6>
   <%= render :partial => 'spree/shared/rating', :locals => {:product => @product, :review => 0} %>
   <% for review in @product.reviews.approval_filter %>
     <%= render :partial => 'spree/shared/review', :locals => {:review => review} %>
